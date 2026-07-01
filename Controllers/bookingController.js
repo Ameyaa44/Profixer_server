@@ -343,10 +343,10 @@ exports.bookingStripe = async (req, res) => {
                 quantity: 1,
             }],
             mode: 'payment',
-            // success_url: `http://localhost:5173/payment-success`,
-            success_url: `https://profixer-frontend.vercel.app/payment-success`,
-            // cancel_url: `http://localhost:5173/payment-cancel`,
-            cancel_url: `https://profixer-frontend.vercel.app/payment-cancel`,
+            // success_url: "http://localhost:5173/payment-success",
+            success_url: "https://profixer-frontend.vercel.app/payment-success",
+            // cancel_url: "http://localhost:5173/payment-cancel",
+            cancel_url: "https://profixer-frontend.vercel.app/payment-cancel",
         });
 
         newBooking.stripeSessionId = session.id;
